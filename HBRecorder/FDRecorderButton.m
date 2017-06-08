@@ -1,12 +1,9 @@
 
 
-#define RECORDER_DURATION 300        //默认录音最大时长
-
-
 #import <AVFoundation/AVFoundation.h>
 #import <MBProgressHUD/MBProgressHUD.h>
 #import "FDRecorderButton.h"
-#import "IMMacros.h"
+#import "FDMacros.h"
 #import "FDAudioPlayerManager.h"
 #import <Lame/lame.h>
 

@@ -1,13 +1,13 @@
 //
-//  IMMacros.h
+//  FDMacros.h
 //  HUANGBO
 //
 //  Created by HUANGBO on 15/3/31.
 //  Copyright (c) 2015年 YY.COM All rights reserved.
 //
 
-#ifndef pengmi_IMMacros_h
-#define pengmi_IMMacros_h
+#ifndef pengmi_FDMacros_h
+#define pengmi_FDMacros_h
 
 //NSCachesDirectory
 //NSDocumentDirectory
@@ -35,6 +35,11 @@
 
 
 #define KT_HEXCOLOR(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1]
+
+/**
+ * 最大录音时长
+ */
+#define RECORDER_DURATION 300        //默认录音最大时长
 
 
 #endif

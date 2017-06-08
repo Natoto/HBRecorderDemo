@@ -1,8 +1,8 @@
 
-
 static NSString *const AudioRecorderPath=@"audioPath";          ///<文件路径 string
 static NSString *const AudioRecorderName=@"audioName";          ///<文件名称 string
 static NSString *const AudioRecorderDuration=@"audioDuration";  ///<音频时长 string
+
 typedef enum : NSUInteger {
     RECORD_NONE = 0,        //无操作
     RECORD_INIT,        //初始化

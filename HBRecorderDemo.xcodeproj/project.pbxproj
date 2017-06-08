@@ -15,7 +15,7 @@
 		F87948071EE93B4200B6BF31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F87948061EE93B4200B6BF31 /* Assets.xcassets */; };
 		F879480A1EE93B4200B6BF31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F87948081EE93B4200B6BF31 /* LaunchScreen.storyboard */; };
 		F87948141EE93B7900B6BF31 /* FDRecorderButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F87948131EE93B7900B6BF31 /* FDRecorderButton.m */; };
-		F87948181EE93E1200B6BF31 /* IMAudioRecordPlayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F87948161EE93E1200B6BF31 /* IMAudioRecordPlayManager.m */; };
+		F87948181EE93E1200B6BF31 /* FDAudioRecordPlayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F87948161EE93E1200B6BF31 /* FDAudioRecordPlayManager.m */; };
 		F879481F1EE93E3D00B6BF31 /* FDAudioPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F879481E1EE93E3D00B6BF31 /* FDAudioPlayerManager.m */; };
 		F87948221EE93E4F00B6BF31 /* FDAudioNotifyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F87948211EE93E4F00B6BF31 /* FDAudioNotifyObject.m */; };
 /* End PBXBuildFile section */
@@ -36,9 +36,9 @@
 		F879480B1EE93B4200B6BF31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F87948121EE93B7900B6BF31 /* FDRecorderButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDRecorderButton.h; sourceTree = "<group>"; };
 		F87948131EE93B7900B6BF31 /* FDRecorderButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDRecorderButton.m; sourceTree = "<group>"; };
-		F87948151EE93E1200B6BF31 /* IMAudioRecordPlayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMAudioRecordPlayManager.h; sourceTree = "<group>"; };
-		F87948161EE93E1200B6BF31 /* IMAudioRecordPlayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMAudioRecordPlayManager.m; sourceTree = "<group>"; };
-		F87948171EE93E1200B6BF31 /* IMMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMMacros.h; sourceTree = "<group>"; };
+		F87948151EE93E1200B6BF31 /* FDAudioRecordPlayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDAudioRecordPlayManager.h; sourceTree = "<group>"; };
+		F87948161EE93E1200B6BF31 /* FDAudioRecordPlayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDAudioRecordPlayManager.m; sourceTree = "<group>"; };
+		F87948171EE93E1200B6BF31 /* FDMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDMacros.h; sourceTree = "<group>"; };
 		F879481D1EE93E3D00B6BF31 /* FDAudioPlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDAudioPlayerManager.h; sourceTree = "<group>"; };
 		F879481E1EE93E3D00B6BF31 /* FDAudioPlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDAudioPlayerManager.m; sourceTree = "<group>"; };
 		F87948201EE93E4F00B6BF31 /* FDAudioNotifyObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDAudioNotifyObject.h; sourceTree = "<group>"; };
@@ -120,9 +120,9 @@
 		F87948111EE93B6E00B6BF31 /* HBRecorder */ = {
 			isa = PBXGroup;
 			children = (
-				F87948151EE93E1200B6BF31 /* IMAudioRecordPlayManager.h */,
-				F87948161EE93E1200B6BF31 /* IMAudioRecordPlayManager.m */,
-				F87948171EE93E1200B6BF31 /* IMMacros.h */,
+				F87948151EE93E1200B6BF31 /* FDAudioRecordPlayManager.h */,
+				F87948161EE93E1200B6BF31 /* FDAudioRecordPlayManager.m */,
+				F87948171EE93E1200B6BF31 /* FDMacros.h */,
 				F879481D1EE93E3D00B6BF31 /* FDAudioPlayerManager.h */,
 				F879481E1EE93E3D00B6BF31 /* FDAudioPlayerManager.m */,
 				F87948201EE93E4F00B6BF31 /* FDAudioNotifyObject.h */,
@@ -260,7 +260,7 @@
 				F87948021EE93B4200B6BF31 /* ViewController.m in Sources */,
 				F87948141EE93B7900B6BF31 /* FDRecorderButton.m in Sources */,
 				F87947FF1EE93B4200B6BF31 /* AppDelegate.m in Sources */,
-				F87948181EE93E1200B6BF31 /* IMAudioRecordPlayManager.m in Sources */,
+				F87948181EE93E1200B6BF31 /* FDAudioRecordPlayManager.m in Sources */,
 				F87947FC1EE93B4200B6BF31 /* main.m in Sources */,
 				F879481F1EE93E3D00B6BF31 /* FDAudioPlayerManager.m in Sources */,
 			);

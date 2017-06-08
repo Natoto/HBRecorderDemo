@@ -1,16 +1,16 @@
 //
-//  IMAudioRecordPlayManager.m
+//  FDAudioRecordPlayManager.m
 //  JLWeChat
 //
 //  Created by jimneylee on 14-10-26.
 //  Copyright (c) 2014年 jimneylee. All rights reserved.
 //
 
-#import "IMAudioRecordPlayManager.h"
+#import "FDAudioRecordPlayManager.h"
 //#import "QNResourceManager.h"
-#import "IMMacros.h"
+#import "FDMacros.h"
 
-@interface IMAudioRecordPlayManager()<AVAudioPlayerDelegate>
+@interface FDAudioRecordPlayManager()<AVAudioPlayerDelegate>
 
 @property (nonatomic, strong) AVAudioSession *session;
 @property (nonatomic, strong) AVAudioPlayer *player;
@@ -20,11 +20,11 @@
 
 @end
 
-@implementation IMAudioRecordPlayManager
+@implementation FDAudioRecordPlayManager
 
 + (instancetype)sharedManager
 {
-    static IMAudioRecordPlayManager *_sharedManager = nil;
+    static FDAudioRecordPlayManager *_sharedManager = nil;
     static dispatch_once_t onceToken;
     
     dispatch_once(&onceToken, ^{
@@ -70,7 +70,7 @@ static NSString * lastplayurl;
             if (self.player.isPlaying) {
                 
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    [[NSNotificationCenter defaultCenter] postNotificationName:@"IMAudioRecordPlayManager_didAudioPlayerStopPlay" object:lastplayurl];
+                    [[NSNotificationCenter defaultCenter] postNotificationName:@"FDAudioRecordPlayManager_didAudioPlayerStopPlay" object:lastplayurl];
                     [self.player stop];
                 });
             }
@@ -195,7 +195,7 @@ static NSString * lastplayurl;
 
 -(void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
 {
-     [[NSNotificationCenter defaultCenter] postNotificationName:@"IMAudioRecordPlayManager_didAudioPlayerStopPlay" object:lastplayurl];
+     [[NSNotificationCenter defaultCenter] postNotificationName:@"FDAudioRecordPlayManager_didAudioPlayerStopPlay" object:lastplayurl];
 }
 
 

@@ -1,13 +1,7 @@
-//
-//  IMAudioRecordPlayManager.m
-//  JLWeChat
-//
-//  Created by jimneylee on 14-10-26.
-//  Copyright (c) 2014年 jimneylee. All rights reserved.
-//
+ 
 
 #import "FDAudioPlayerManager.h" 
-#import "IMMacros.h"
+#import "FDMacros.h"
 #import <AFNetworking/AFNetworking.h>
 //#import "SMDBS2Manager.h"
 
