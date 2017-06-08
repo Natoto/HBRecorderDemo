@@ -1,0 +1,41 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - Lame (0.0.1)
+  - MBProgressHUD (1.0.0)
+
+DEPENDENCIES:
+  - AFNetworking
+  - Lame (from `https://github.com/Natoto/HBLocalPod/`)
+  - MBProgressHUD
+
+EXTERNAL SOURCES:
+  Lame:
+    :git: https://github.com/Natoto/HBLocalPod/
+
+CHECKOUT OPTIONS:
+  Lame:
+    :commit: de1c52fc607628e1c0f4bbff3f06be99352cbfc3
+    :git: https://github.com/Natoto/HBLocalPod/
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  Lame: 88337b52d66b3b17d98e767e63c5746fe09924ed
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+
+PODFILE CHECKSUM: 0145f19379c127b9e2998d7f6e3a4172fa0c6bde
+
+COCOAPODS: 1.1.1
